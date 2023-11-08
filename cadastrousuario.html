@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Usuário</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <span>BabyLand</span>
+              </a>
+            </div>
+            <div class="ml-auto">
+                <a href="index.html" class="btn btn-primary">Homepage</a>
+              </div>
+        </nav>
+
+          
+    </header>
+
+    <main>
+        <section id="user-registration">
+<div class="container mt-5">
+    <h1>Person Registration</h1>
+    <form action="/cadastrousuario" method="post">
+    <div class="form-group">
+    <label for="nome">Name:</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+    </div>
+    <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+    <label for="endereco">Address:</label>
+    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço">
+    </div>
+    <div class="form-group">
+    <label for="numero">Number:</label>
+    <input type="text" class="form-control" id="numero" name="numero" placeholder="Número">
+    </div>
+    <div class="form-group">
+    <label for="cep">Postal code:</label>
+    <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
+    </div>
+    <div class="form-group">
+    <label for="nascimento">Date of Birth:</label>
+    <input type="text" class="form-control" id="nascimento" name="nascimento">
+    </div>
+    <button type="submit" class="btn btn-dark">Cadastrar</button>
+    </form>
+    </div>
+            <form>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>

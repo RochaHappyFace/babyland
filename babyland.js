@@ -59,12 +59,9 @@ app.post('/cadastraproduto', async (req, res) => {
   });
 
   try {
-    // Tenta salvar o novo produto no banco de dados
     await produto.save();
-    // Se bem-sucedido, envia uma resposta de status 201 (Criado)
     res.status(201).json({ message: 'Produto cadastrado com sucesso!' });
   } catch (error) {
-    // Se houver erro, envia uma resposta de erro
     res.status(500).json({ message: 'Erro ao cadastrar produto', error: error.message });
   }
 });
@@ -80,12 +77,9 @@ app.post('/cadastrousuario', async (req, res) => {
   });
 
   try {
-    // Tenta salvar o novo usuário no banco de dados
     await usuario.save();
-    // Se bem-sucedido, envia uma resposta de status 201 (Criado)
     res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
   } catch (error) {
-    // Se houver erro, envia uma resposta de erro
     res.status(500).json({ message: 'Erro ao cadastrar usuário', error: error.message });
   }
 });
